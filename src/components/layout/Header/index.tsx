@@ -11,7 +11,7 @@ const Header = () => {
           className="flex title-font font-medium text-white mb-4 md:mb-0 pr-4"
           href="/"
         >
-          <span className="ml-3 text-3xl">HENRY FAME</span>
+          <span className="ml-3 text-3xl">HENRY FAMOJURO</span>
         </a>
         <button
           className="text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none ml-auto pb-3"
