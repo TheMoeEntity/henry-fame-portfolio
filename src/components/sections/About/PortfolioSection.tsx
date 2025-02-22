@@ -126,7 +126,7 @@ const PortfolioSection: React.FC<{
         >
           My Experience
         </motion.h1>
-        <div className="mx-auto w-full max-w-xl">
+        <div className="mx-auto w-full max-w-2xl">
           <ExperienceTimeline
             year="2022-2023"
             title="3D Generalist"
