@@ -11,7 +11,7 @@ const Header = () => {
           className="flex title-font font-medium text-white mb-4 md:mb-0 pr-4"
           href="/"
         >
-          <span className="ml-3 text-3xl">HENRY FAMOJURO</span>
+          <span className="ml-3 text-3xl">OLAMIDE FAMOJURO</span>
         </a>
         <button
           className="text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none ml-auto pb-3"
@@ -46,14 +46,17 @@ const Header = () => {
             <Link className="mr-6 hover:text-white" href="/">
               Home
             </Link>
-            <Link className="mr-6 hover:text-white" href="/404">
+            <Link className="mr-6 hover:text-white" href="/about">
               About
             </Link>
-            <Link className="mr-6 hover:text-white" href="/">
-              Animations
+            <Link className="mr-6 hover:text-white" href="/characters">
+              Characters
             </Link>
-            <Link className="mr-6 hover:text-white" href="/">
-              Product Renders
+            <Link className="mr-6 hover:text-white" href="/characters">
+              Animated Films
+            </Link>
+            <Link className="mr-6 hover:text-white" href="/projects">
+              Products
             </Link>
             <Link className="mr-6 hover:text-white" href="/contact">
               Contact
