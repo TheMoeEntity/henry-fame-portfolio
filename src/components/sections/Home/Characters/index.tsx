@@ -10,6 +10,7 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import ScrollableImageGrid from "./ScollableImageGrid";
 const Player = dynamic(() => import("@/components/shared/VideoPlayer"), {
   ssr: false,
 });
@@ -24,6 +25,16 @@ const Characters = () => {
           <ImageWithCaption banner={oldman} caption="" />
           <ImageWithCaption banner={wolf} caption="" />
         </div>
+
+        {/* <ScrollableImageGrid
+          images={[
+            { banner: wole, caption: "" },
+            { banner: oldman, caption: "" },
+            { banner: wolf, caption: "" },
+            { banner: wole, caption: "" },
+            { banner: oldman, caption: "" },
+          ]}
+        /> */}
       </div>
       <section className="text-gray-600 body-font">
         <div className="container flex flex-col gap-5 py-10 mx-auto">

@@ -15,7 +15,7 @@ const VideoPlayer: React.FC<{
   return (
     <div className="relative overflow-hidden pb-[56.25%] h-[150px] group">
       {/* Overlay with Hover Effect (Hidden on Mobile) */}
-      {!isMobile && (
+      {!isMobile && caption && (
         <div className="absolute w-full h-full bg-[rgba(0,0,0,0.63)] z-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Link
             href={link}

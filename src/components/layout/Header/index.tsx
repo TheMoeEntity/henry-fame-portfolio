@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="text-white body-font">
-      <div className="container mx-auto items-center flex p-5 md:flex-row">
+      <div className="container mx-auto items-center flex py-7 px-3 md:flex-row">
         <Link
           className="flex title-font font-medium text-white mb-4 md:mb-0 pr-4"
           href="/"
@@ -114,6 +114,13 @@ const Header = () => {
                   </Link>
                   <Link
                     className="text-2xl hover:text-[#14AFF1]"
+                    href="/projects"
+                    onClick={toggleNavbar}
+                  >
+                    Tutorials
+                  </Link>
+                  <Link
+                    className="text-2xl hover:text-[#14AFF1]"
                     href="/contact"
                     onClick={toggleNavbar}
                   >
@@ -148,6 +155,9 @@ const Header = () => {
             </Link>
             <Link className="mr-6 hover:text-[#14AFF1]" href="/projects">
               Products
+            </Link>
+            <Link className="mr-6 hover:text-[#14AFF1]" href="/tutorials">
+              Tutorials
             </Link>
             <Link className="mr-6 hover:text-[#14AFF1]" href="/contact">
               Contact
