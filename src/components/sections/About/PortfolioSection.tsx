@@ -73,7 +73,7 @@ const PortfolioSection: React.FC<{
               <h2 className="text-white text-2xl title-font font-medium mb-3">
                 Skills
               </h2>
-              <div className="flex flex-wrap gap-x-2 gap-y-2 items-center">
+              <div className="flex flex-wrap justify-center md:justify-start gap-x-2 gap-y-2 items-center">
                 {skills.map((skill, index) => (
                   <motion.span
                     key={index}

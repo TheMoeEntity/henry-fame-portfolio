@@ -9,7 +9,10 @@ import ImageWithCaption from "@/components/shared/ImageWithCaption";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { motion } from "framer-motion";
-import VideoPlayer from "@/components/shared/VideoPlayer";
+import dynamic from "next/dynamic";
+const Player = dynamic(() => import("@/components/shared/VideoPlayer"), {
+  ssr: false,
+});
 
 const Characters = () => {
   return (
@@ -66,14 +69,29 @@ const Characters = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="my-12 mb-2 text-6xl font-bold tracking-tighter text-white  md:text-7xl"
+            className="mt-12 mb-2 text-5xl font-bold tracking-tighter text-white  md:text-7xl"
           >
             Animations
           </motion.h2>
-          <VideoPlayer
+          <Player
+            caption="Finding Jumijo"
+            link="/animations/finding-jumijo"
             media={
               "https://firebasestorage.googleapis.com/v0/b/greencalbackend.appspot.com/o/Finding%20Jimijo.mp4?alt=media&token=7d685ed6-9705-44eb-8a93-d214bc227e23"
             }
+          />
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="mt-12 mb-2 text-5xl font-bold tracking-tighter text-white  md:text-7xl"
+          >
+            Tutorials
+          </motion.h2>
+          <Player
+            link={"https://www.youtube.com/watch?v=Cw0xdVGspZY"}
+            caption="Stylized Male Portrait"
+            media={"https://www.youtube.com/watch?v=Cw0xdVGspZY"}
           />
         </div>
       </section>
