@@ -3,33 +3,33 @@ import { PlayCircle } from "lucide-react"; // Assuming you're using Lucide icons
 
 const tutorials = [
   {
-    title: "Introduction to ZBrush",
-    url: "https://www.youtube.com/watch?v=example1",
+    title: "2D to 3D in Zbrush |  Zbrush to Photoshop",
+    url: "https://youtu.be/guNLKxgDPn0",
     thumbnail: "/zbrush-thumbnail.jpg",
   },
   {
-    title: "Sculpting Human Anatomy",
-    url: "https://www.youtube.com/watch?v=example2",
+    title: "Stylized Male Portrait",
+    url: "https://youtu.be/Cw0xdVGspZY",
     thumbnail: "/anatomy-thumbnail.jpg",
   },
   {
-    title: "Texturing in Substance Painter",
-    url: "https://www.youtube.com/watch?v=example3",
+    title: "Stylized Portrait of John Wick",
+    url: "https://youtu.be/m2HrN-VhIHY",
     thumbnail: "/substance-thumbnail.jpg",
   },
   {
-    title: "Character Rigging Basics",
-    url: "https://www.youtube.com/watch?v=example4",
+    title: "The Dark Knight (workflow breakdown)",
+    url: "https://youtu.be/IEvlwFdRm0I",
     thumbnail: "/rigging-thumbnail.jpg",
   },
   {
-    title: "Creating Cinematic Animations",
-    url: "https://www.youtube.com/watch?v=example5",
+    title: "How to block out a character fast",
+    url: "https://youtube.com/shorts/NGRAn4XpWdo",
     thumbnail: "/cinematic-thumbnail.jpg",
   },
   {
-    title: "3D Printing Workflow",
-    url: "https://www.youtube.com/watch?v=example6",
+    title: "How to sculpt stylized feet",
+    url: "https://youtube.com/shorts/PlWIZj6QiHw",
     thumbnail: "/3dprint-thumbnail.jpg",
   },
 ];
@@ -55,11 +55,6 @@ const TutorialsSection = () => {
             >
               {/* Thumbnail */}
               <div className="relative aspect-video">
-                <img
-                  src={tutorial.thumbnail}
-                  alt={tutorial.title}
-                  className="w-full h-full object-cover"
-                />
                 {/* Play Icon Overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <PlayCircle className="w-16 h-16 text-white" />

@@ -10,7 +10,8 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import ScrollableImageGrid from "./ScollableImageGrid";
+import Link from "next/link";
+// import ScrollableImageGallery from "./ScollableImageGrid";
 const Player = dynamic(() => import("@/components/shared/VideoPlayer"), {
   ssr: false,
 });
@@ -25,14 +26,13 @@ const Characters = () => {
           <ImageWithCaption banner={oldman} caption="" />
           <ImageWithCaption banner={wolf} caption="" />
         </div>
-
-        {/* <ScrollableImageGrid
-          images={[
-            { banner: wole, caption: "" },
-            { banner: oldman, caption: "" },
-            { banner: wolf, caption: "" },
-            { banner: wole, caption: "" },
-            { banner: oldman, caption: "" },
+        {/* <ScrollableImageGallery
+          cards={[
+            { banner: wole, caption: "The GOAT KING" },
+            { banner: oldman, caption: "The GOAT KING" },
+            { banner: wolf, caption: "The GOAT KING" },
+            { banner: oldman, caption: "The GOAT KING" },
+            { banner: wolf, caption: "The GOAT KING" },
           ]}
         /> */}
       </div>
@@ -82,11 +82,11 @@ const Characters = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-12 mb-2 text-5xl font-bold tracking-tighter text-white  md:text-7xl"
           >
-            Animations
+            <Link href={"/animations"}>Animations</Link>
           </motion.h2>
           <Player
             caption="Finding Jumijo"
-            link="/animations/finding-jumijo"
+            link="/animated-films/finding-jomijo"
             media={
               "https://firebasestorage.googleapis.com/v0/b/greencalbackend.appspot.com/o/Finding%20Jimijo.mp4?alt=media&token=7d685ed6-9705-44eb-8a93-d214bc227e23"
             }
@@ -97,7 +97,7 @@ const Characters = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-12 mb-2 text-5xl font-bold tracking-tighter text-white  md:text-7xl"
           >
-            Tutorials
+            <Link href={"/tutorials"}>Tutorials</Link>
           </motion.h2>
           <Player
             link={"https://www.youtube.com/watch?v=Cw0xdVGspZY"}

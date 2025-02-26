@@ -100,7 +100,7 @@ const Header = () => {
                   </Link>
                   <Link
                     className="text-2xl hover:text-[#14AFF1]"
-                    href="/characters"
+                    href="/animated-films"
                     onClick={toggleNavbar}
                   >
                     Animated Films
@@ -150,7 +150,7 @@ const Header = () => {
             <Link className="mr-6 hover:text-[#14AFF1]" href="/characters">
               Characters
             </Link>
-            <Link className="mr-6 hover:text-[#14AFF1]" href="/characters">
+            <Link className="mr-6 hover:text-[#14AFF1]" href="/animated-films">
               Animated Films
             </Link>
             <Link className="mr-6 hover:text-[#14AFF1]" href="/projects">

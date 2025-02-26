@@ -9,38 +9,38 @@ const Player = dynamic(() => import("@/components/shared/VideoPlayer"), {
 });
 
 const Tutorials = () => {
-  const tutorials = [
-    {
-      title: "Introduction to ZBrush",
-      url: "https://www.youtube.com/watch?v=example1",
-      thumbnail: "/zbrush-thumbnail.jpg",
-    },
-    {
-      title: "Sculpting Human Anatomy",
-      url: "https://www.youtube.com/watch?v=example2",
-      thumbnail: "/anatomy-thumbnail.jpg",
-    },
-    {
-      title: "Texturing in Substance Painter",
-      url: "https://www.youtube.com/watch?v=example3",
-      thumbnail: "/substance-thumbnail.jpg",
-    },
-    {
-      title: "Character Rigging Basics",
-      url: "https://www.youtube.com/watch?v=example4",
-      thumbnail: "/rigging-thumbnail.jpg",
-    },
-    {
-      title: "Creating Cinematic Animations",
-      url: "https://www.youtube.com/watch?v=example5",
-      thumbnail: "/cinematic-thumbnail.jpg",
-    },
-    {
-      title: "3D Printing Workflow",
-      url: "https://www.youtube.com/watch?v=example6",
-      thumbnail: "/3dprint-thumbnail.jpg",
-    },
-  ];
+const tutorials = [
+  {
+    title: "2D to 3D in Zbrush |  Zbrush to Photoshop",
+    url: "https://youtu.be/guNLKxgDPn0",
+    thumbnail: "/zbrush-thumbnail.jpg",
+  },
+  {
+    title: "Stylized Male Portrait",
+    url: "https://youtu.be/Cw0xdVGspZY",
+    thumbnail: "/anatomy-thumbnail.jpg",
+  },
+  {
+    title: "Stylized Portrait of John Wick",
+    url: "https://youtu.be/m2HrN-VhIHY",
+    thumbnail: "/substance-thumbnail.jpg",
+  },
+  {
+    title: "The Dark Knight (workflow breakdown)",
+    url: "https://youtu.be/IEvlwFdRm0I",
+    thumbnail: "/rigging-thumbnail.jpg",
+  },
+  {
+    title: "How to block out a character fast",
+    url: "https://youtube.com/shorts/NGRAn4XpWdo",
+    thumbnail: "/cinematic-thumbnail.jpg",
+  },
+  {
+    title: "How to sculpt stylized feet",
+    url: "https://youtube.com/shorts/PlWIZj6QiHw",
+    thumbnail: "/3dprint-thumbnail.jpg",
+  },
+];
   return (
     <main className="py-16 px-5">
       <Section>
@@ -53,9 +53,10 @@ const Tutorials = () => {
 
             <p className="text-lg text-gray-300 text-center max-w-2xl mx-auto mb-12">
               Dive into my collection of tutorials where I break down the art of
-              character animation, sculpting, and 3D modeling. Whether you're a
-              beginner or an experienced artist, these videos will help you
-              sharpen your skills and bring your creative ideas to life.
+              character animation, sculpting, and 3D modeling. Whether{" "}
+              {`you're`} a beginner or an experienced artist, these videos will
+              help you sharpen your skills and bring your creative ideas to
+              life.
             </p>
 
             {/* Tutorials Grid */}
@@ -72,9 +73,9 @@ const Tutorials = () => {
                   <div className="relative aspect-video">
                     <div className="-z-1">
                       <Player
-                        link={"https://www.youtube.com/watch?v=Cw0xdVGspZY"}
+                        link={tutorial.url}
                         caption=""
-                        media={"https://www.youtube.com/watch?v=Cw0xdVGspZY"}
+                        media={tutorial.url}
                       />
                     </div>
                     {/* <img
