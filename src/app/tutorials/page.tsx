@@ -9,45 +9,45 @@ const Player = dynamic(() => import("@/components/shared/VideoPlayer"), {
 });
 
 const Tutorials = () => {
-const tutorials = [
-  {
-    title: "2D to 3D in Zbrush |  Zbrush to Photoshop",
-    url: "https://youtu.be/guNLKxgDPn0",
-    thumbnail: "/zbrush-thumbnail.jpg",
-  },
-  {
-    title: "Stylized Male Portrait",
-    url: "https://youtu.be/Cw0xdVGspZY",
-    thumbnail: "/anatomy-thumbnail.jpg",
-  },
-  {
-    title: "Stylized Portrait of John Wick",
-    url: "https://youtu.be/m2HrN-VhIHY",
-    thumbnail: "/substance-thumbnail.jpg",
-  },
-  {
-    title: "The Dark Knight (workflow breakdown)",
-    url: "https://youtu.be/IEvlwFdRm0I",
-    thumbnail: "/rigging-thumbnail.jpg",
-  },
-  {
-    title: "How to block out a character fast",
-    url: "https://youtube.com/shorts/NGRAn4XpWdo",
-    thumbnail: "/cinematic-thumbnail.jpg",
-  },
-  {
-    title: "How to sculpt stylized feet",
-    url: "https://youtube.com/shorts/PlWIZj6QiHw",
-    thumbnail: "/3dprint-thumbnail.jpg",
-  },
-];
+  const tutorials = [
+    {
+      title: "2D to 3D in Zbrush |  Zbrush to Photoshop",
+      url: "https://youtu.be/guNLKxgDPn0",
+      thumbnail: "/zbrush-thumbnail.jpg",
+    },
+    {
+      title: "Stylized Male Portrait",
+      url: "https://youtu.be/Cw0xdVGspZY",
+      thumbnail: "/anatomy-thumbnail.jpg",
+    },
+    {
+      title: "Stylized Portrait of John Wick",
+      url: "https://youtu.be/m2HrN-VhIHY",
+      thumbnail: "/substance-thumbnail.jpg",
+    },
+    {
+      title: "The Dark Knight (workflow breakdown)",
+      url: "https://youtu.be/IEvlwFdRm0I",
+      thumbnail: "/rigging-thumbnail.jpg",
+    },
+    {
+      title: "How to block out a character fast",
+      url: "https://youtube.com/shorts/NGRAn4XpWdo",
+      thumbnail: "/cinematic-thumbnail.jpg",
+    },
+    {
+      title: "How to sculpt stylized feet",
+      url: "https://youtube.com/shorts/PlWIZj6QiHw",
+      thumbnail: "/3dprint-thumbnail.jpg",
+    },
+  ];
   return (
     <main className="py-16 px-5">
       <Section>
         <section className="">
           <div className="container mx-auto">
             {/* Section Title */}
-            <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
+            <h2 className="text-4xl md:text-7xl font-bold text-white text-center mb-12">
               Tutorials
             </h2>
 
