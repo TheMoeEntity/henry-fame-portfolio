@@ -22,7 +22,7 @@ const Hero = () => {
     },
   };
   return (
-    <section className="container px-5 lg:mt-32 mx-auto lg:px-4 lg:py-4">
+    <section className="container lg:mt-32 mx-auto lg:px-4 lg:py-4">
       <motion.div
         initial="hidden"
         animate="visible"

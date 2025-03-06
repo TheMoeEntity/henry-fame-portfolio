@@ -30,8 +30,7 @@ export const films: {
         },
         {
           title: "Layout Design",
-          description:
-            "Alongside @kiks_johnson, we worked on the layout designs, which @barhbie_ then elevated with her unique style.",
+          description: `Alongside <a class="underline" href='https://www.instagram.com/kiks_johnson/'>@kiks_johnson</a>, we worked on the layout designs, which <a href='https://www.instagram.com/barhbie_/' class='underline'>@barhbie_</a> then elevated with her unique style.`,
         },
         {
           title: "Voice Acting",
@@ -58,17 +57,17 @@ export const films: {
         {
           title: "Character Development",
           description:
-            "Designed, sculpted, textured, and modeled the characters, ensuring they aligned with the artistic vision, with final refinements made by the director.",
+            "Designed, sculpted, textured, and modeled the characters, ensuring they aligned with the artistic vision, with final refinements made by the director. <a class='font-medium underline' href='https://www.instagram.com/guru.animation/'>Duru Azubuike</a>",
         },
         {
           title: "Rigging Support",
           description:
-            "Assisted the rigger in setting up one of the characters for animation, gaining valuable insight into character movement and deformation.",
+            "Assisted the riggers ( <a class='underline font-medium' href='https://www.instagram.com/n003_animation/'>Jasmin Galadima, </a><a href='https://www.instagram.com/christ_mindset/' class='font-medium underline'>Nicolas Ogah</a>) in setting up one of the characters for animation, gaining valuable insight into character movement and deformation.",
         },
         {
           title: "Environment and Asset Creation",
           description:
-            "Supported the environment artist by modeling various assets, contributing to the film’s overall visual design.",
+            "Supported the environment artist ( <a class='underline font-medium' href='https://www.instagram.com/brianifidon.ztl/'>Esen Unukogbon Brian Ifidon</a>) by modeling various assets, contributing to the film’s overall visual design.",
         },
         {
           title: "Animated",

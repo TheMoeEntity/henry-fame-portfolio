@@ -8,7 +8,7 @@ export const Footer = () => {
         {/* Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
-          <div className="space-y-4">
+          <div className="space-y-4 p-5">
             <h2 className="text-2xl font-bold text-white">OLAMIDE FAMOJURO</h2>
             <p className="text-gray-400">
               Bringing characters to life through expert modeling, sculpting,
@@ -18,7 +18,7 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
+          <div className="space-y-4 p-5">
             <h3 className="text-xl font-bold text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -57,7 +57,7 @@ export const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="space-y-4">
+          <div className="space-y-4 p-5">
             <h3 className="text-xl font-bold text-white">{`Let's`} Connect</h3>
             <p className="text-gray-400">
               Reach out for collaborations, inquiries, or just to say hi!

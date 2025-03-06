@@ -11,7 +11,6 @@ import VisibilitySensor from "react-visibility-sensor";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-// import ScrollableImageGallery from "./ScollableImageGrid";
 const Player = dynamic(() => import("@/components/shared/VideoPlayer"), {
   ssr: false,
 });
@@ -19,7 +18,7 @@ const Player = dynamic(() => import("@/components/shared/VideoPlayer"), {
 const Characters = () => {
   return (
     <Section>
-      <div className="container flex flex-col items-center justify-center py-8 mx-auto rounded-lg md:p-1 p-3">
+      <div className="container flex flex-col items-center justify-center pt-5 pb-8 mx-auto rounded-lg md:p-1">
         <ImageWithCaption banner={banner} caption="The GOAT KING" />
         <div className="grid grid-cols-1 gap-0 md:grid-cols-3">
           <ImageWithCaption banner={wole} caption="" />
@@ -80,13 +79,14 @@ const Characters = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-12 mb-2 text-5xl font-bold tracking-tighter text-white  md:text-7xl"
+            className="mt-12 mb-2 text-4xl font-bold tracking-tighter text-white  md:text-7xl"
           >
-            <Link href={"/animations"}>Animations</Link>
+            <Link href={"/projects"}>Animations</Link>
           </motion.h2>
           <Player
+            play={false}
             caption="Finding Jumijo"
-            link="/animated-films/finding-jomijo"
+            link="/projects/finding-jomijo"
             media={
               "https://firebasestorage.googleapis.com/v0/b/greencalbackend.appspot.com/o/Finding%20Jimijo.mp4?alt=media&token=7d685ed6-9705-44eb-8a93-d214bc227e23"
             }
@@ -95,7 +95,7 @@ const Characters = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mt-12 mb-2 text-5xl font-bold tracking-tighter text-white  md:text-7xl"
+            className="mt-12 mb-2 text-4xl font-bold tracking-tighter text-white  md:text-7xl"
           >
             <Link href={"/tutorials"}>Tutorials</Link>
           </motion.h2>

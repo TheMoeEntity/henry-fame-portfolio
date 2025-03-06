@@ -48,7 +48,9 @@ const AnimatedFilmDescription = async ({
                   {film.content.list.map((item, idx) => (
                     <li key={idx} className="text-lg text-gray-300">
                       <strong className="text-[#14AFF1]">{item.title}:</strong>{" "}
-                      {item.description}
+                      <span
+                        dangerouslySetInnerHTML={{ __html: item.description }}
+                      />
                     </li>
                   ))}
                 </ul>

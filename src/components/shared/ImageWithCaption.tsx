@@ -7,14 +7,14 @@ const ImageWithCaption: React.FC<{
   caption: string;
 }> = ({ banner, caption }) => {
   return (
-    <div className="container w-full h-full flex flex-col items-center justify-center py-0 mx-auto rounded-lg md:p-1 p-2">
+    <div className="container w-full h-full flex flex-col items-center justify-center py-0 mx-auto rounded-lg md:p-1">
       <motion.div
         className="relative w-full mb-10"
         whileHover={{ scale: 1.02 }} // Optional: Adds a slight scale effect on hover
         transition={{ type: "spring", stiffness: 300 }}
       >
         <Image
-          className="object-cover object-center w-full border-gray-200 dark:border-gray-900 g327 border rounded-lg shadow-md"
+          className="object-cover object-center g327 rounded-lg shadow-md"
           alt="Main character"
           src={banner}
         />

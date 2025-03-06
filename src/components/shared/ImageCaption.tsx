@@ -14,7 +14,7 @@ export const ImageWithCaption = ({
     transition={{ type: "spring", stiffness: 300 }}
   >
     <Image
-      className="object-cover object-center w-full border-gray-200 dark:border-gray-900 border rounded-lg shadow-md"
+      className="object-cover object-center w-full rounded-lg shadow-md"
       alt={alt}
       src={src}
     />

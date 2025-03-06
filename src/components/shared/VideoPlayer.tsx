@@ -9,7 +9,8 @@ const VideoPlayer: React.FC<{
   thumbnail?: string;
   caption: string;
   link: Url;
-}> = ({ media, thumbnail, caption, link }) => {
+  play?: boolean;
+}> = ({ media, thumbnail, caption, link, play = true }) => {
   const isMobile = useClientMediaQuery("(max-width: 600px)");
 
   return (
@@ -19,7 +20,7 @@ const VideoPlayer: React.FC<{
         <div className="absolute w-full h-full bg-[rgba(0,0,0,0.63)] z-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <Link
             href={link}
-            className="underline text-center underline-offset-[16px] my-12 mb-2 text font-bold tracking-tighter text-white md:text-7xl"
+            className="text-center my-12 mb-2 text font-bold tracking-tighter text-white md:text-7xl"
           >
             {caption}
           </Link>
@@ -30,12 +31,12 @@ const VideoPlayer: React.FC<{
       <ReactPlayer
         url={media}
         light={thumbnail}
-        controls={isMobile || false} // Show controls only on mobile
+        controls={isMobile && play ? true : isMobile && !play ? false : false} // Show controls only on mobile
         playing={true} // Enable autoplay
         width="100%"
         loop
         height="100%"
-        muted
+        muted={true}
         className="absolute top-0 left-0"
         style={{ objectFit: "cover" }}
       />
