@@ -111,13 +111,13 @@ const Header = () => {
                   >
                     Projects
                   </Link>
-                  <Link
+                  {/* <Link
                     className="text-2xl hover:text-[#14AFF1]"
                     href="/projects"
                     onClick={toggleNavbar}
                   >
                     Products
-                  </Link>
+                  </Link> */}
                   <Link
                     className="text-2xl hover:text-[#14AFF1]"
                     href="/projects"
@@ -162,9 +162,9 @@ const Header = () => {
             <Link className="mr-6 hover:text-[#14AFF1]" href="/projects">
               Projects
             </Link>
-            <Link className="mr-6 hover:text-[#14AFF1]" href="/projects">
+            {/* <Link className="mr-6 hover:text-[#14AFF1]" href="/projects">
               Products
-            </Link>
+            </Link> */}
             <Link className="mr-6 hover:text-[#14AFF1]" href="/tutorials">
               Tutorials
             </Link>
